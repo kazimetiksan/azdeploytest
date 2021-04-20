@@ -5,6 +5,11 @@ const _ = require('lodash')
 const app = express()
 app.use(bodyParser.json())
 
+app.get('/api/node', (req, res) => {
+
+    res.send('Hello Node')
+})
+
 app.get('/api/hello', (req, res) => {
 
     res.send('Hello World')
